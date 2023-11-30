@@ -19,7 +19,8 @@ def main():
             sys.exit(1)
         else:
             index = operator_array.index(operator)
-            print("{} {} {} = {}".format(a, operator, b, func_array[index](a, b)))
+            print("{} {} {} = {}".format(a, operator,
+                                         b, func_array[index](a, b)))
 
 
 if __name__ == "__main__":
