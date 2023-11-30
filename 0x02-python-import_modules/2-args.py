@@ -9,8 +9,8 @@ def main():
     else:
         s = "" if num_args == 1 else "s"
         print("{}: argument{}:".format(num_args, s))
-        for i in range(1, num_args + 1):
-            print("{}: {}".format(i, sys.argv[i]))
+        for i in range(num_args):
+            print("{}: {}".format(i + 1, sys.argv[i + 1]))
 
 
 if __name__ == "__main__":
