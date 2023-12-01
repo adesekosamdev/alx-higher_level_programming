@@ -3,9 +3,8 @@ import hidden_4
 
 
 def main():
-    names = dir(hidden_4)
-    for name in names:
-        if name[:2] != "__":
+    for name in dir(hidden_4):
+        if name[0] != '__':
             print(name)
 
 
