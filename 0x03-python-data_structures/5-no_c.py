@@ -12,3 +12,5 @@ def no_c(my_string):
         list_from_string = list_from_string[:(list_len-count)]
         new_string = ''.join(list_from_string)
         return new_string
+    else:
+        return ""
