@@ -16,7 +16,7 @@ int is_palindrome(listint_t **head)
 	ptr = *head;
 	if (ptr == NULL)
 		return (1);
-	while (h)
+	while (ptr)
 	{
 		buffer[len] = ptr->n;
 		ptr = ptr->next;
