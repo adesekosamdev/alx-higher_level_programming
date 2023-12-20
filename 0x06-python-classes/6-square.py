@@ -4,9 +4,10 @@
 
 class Square:
     """class Square that defines a square"""
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """Instantiation with size"""
         self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -25,20 +26,16 @@ class Square:
 
     @property
     def position(self):
-        """tuple position"""
+        """retrieves position"""
 
         return self.__position
 
     @position.setter
     def position(self, value):
-        """ set posotion of the square
-
-        Args:
-            value (tuple): position
-        """
+        """ sets position"""
         if type(value) is not tuple:
             raise TypeError('position must be a tuple of 2 positive integers')
-        elif len(value) is not 2:
+        elif len(value) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
         elif type(value[0]) is not int or type(value[1]) is not int:
             raise TypeError('position must be a tuple of 2 positive integers')
