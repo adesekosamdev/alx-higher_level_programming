@@ -3,7 +3,7 @@
 
 
 class Node:
-    """class Node that defines a node of a singly linked list"""
+    """class that defines a node of a singly linked list"""
     def __init__(self, data, next_node=None):
         """Instantiation with size"""
         self.data = data
@@ -37,11 +37,14 @@ class Node:
 
 
 class SinglyLinkedList:
+    """class that defines a singly linked list"""
     def __init__(self):
+        """Simple instantiation"""
         self.__head = None
         self.linked_list = []
 
     def sorted_insert(self, value):
+        """inserts a new Node into the correct sorted position in the list"""
         new_node = Node(value)
         new_node.next_node = self.__head
         self.__head = new_node
@@ -53,4 +56,5 @@ class SinglyLinkedList:
         self.linked_list.sort()
 
     def __str__(self):
+        """returns string"""
         return '\n'.join(list(map(str, self.linked_list)))
