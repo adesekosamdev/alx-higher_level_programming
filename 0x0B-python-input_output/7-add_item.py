@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module that
+"""module
 adds all arguments to a Python list
 """
 from sys import argv
@@ -18,5 +18,5 @@ if __name__ == "__main__":
     else:
         with open("add_item.json", encoding="utf-8", mode="w"):
             json_list = []
-    new_json = my_list + json_list
+    new_json = json_list + my_list
     save_to_json_file(new_json, "add_item.json")
