@@ -61,4 +61,4 @@ class Rectangle:
                 for j in range(self.__height)]))
     
     def __repr__(self):
-        return Rectangle()
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
