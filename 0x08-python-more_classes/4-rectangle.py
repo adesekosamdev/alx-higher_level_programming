@@ -59,3 +59,11 @@ class Rectangle:
             return ""
         return ("\n".join(["".join(["#" for i in range(self.__width)])
                 for j in range(self.__height)]))
+    
+    def __repr__(self):
+        """ returns the rectangle with the character #
+        """
+        if self.__width is 0 or self.__height is 0:
+            return ""
+        return ("\n".join(["".join(["#" for i in range(self.__width)])
+                for j in range(self.__height)]))
